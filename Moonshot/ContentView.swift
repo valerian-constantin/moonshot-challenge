@@ -54,7 +54,7 @@ struct ContentView: View {
             
             
             .toolbar{
-                Button(switchView ? "List view" : "Grid view") {
+                Button(switchView ? "List" : "Grid") {
                     withAnimation(.spring()) {
                         switchView.toggle()
                     }
