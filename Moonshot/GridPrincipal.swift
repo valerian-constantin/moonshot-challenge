@@ -43,7 +43,7 @@ struct GridPrincipal: View {
                     }.clipShape(.rect(cornerRadius: 10))
                         .overlay(
                             
-                            RoundedRectangle(cornerRadius: 10)
+                            RoundedRectangle(cornerRadius: 20)
                                 .stroke(.lightBackground))
                     
                     
