@@ -16,9 +16,7 @@ struct GridSecundar: View {
         ScrollView {
             VStack(spacing: 10) {
                 ForEach(missions) { mission in
-                    NavigationLink {
-                        MissionView(mission: mission, astronauts: astronauts)
-                    } label: {
+                    NavigationLink(value: mission) {
                         VStack {
                             HStack(spacing: 0) {
                                 

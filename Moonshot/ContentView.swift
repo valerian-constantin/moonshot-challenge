@@ -49,7 +49,10 @@ struct ContentView: View {
                 }
                 
                 
-            } .navigationTitle(switchView ? "Missions" : "Astronauts")
+            } .navigationDestination(for: Mission.self) { mission in
+                MissionView(mission: mission, astronauts: astronauts)
+            }
+            .navigationTitle(switchView ? "Missions" : "Astronauts")
                 .navigationBarTitleDisplayMode(.inline)
             
             

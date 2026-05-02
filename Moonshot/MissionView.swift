@@ -28,7 +28,7 @@ struct MissionView: View {
     let mission: Mission
 
     var body: some View {
-        NavigationStack {
+        
             ScrollView {
                 VStack {
                     Image(mission.image)
@@ -93,7 +93,7 @@ struct MissionView: View {
             .navigationTitle(String(mission.displayName))
             .navigationBarTitleDisplayMode(.inline)
             .background(.darkBackground)
-        }
+        
         
     }
 }
