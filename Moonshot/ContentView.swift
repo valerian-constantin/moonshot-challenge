@@ -52,6 +52,9 @@ struct ContentView: View {
             } .navigationDestination(for: Mission.self) { mission in
                 MissionView(mission: mission, astronauts: astronauts)
             }
+            .navigationDestination(for: Astronaut.self) { crewMember in
+                AstronautView(astronaut: crewMember)
+            }
             .navigationTitle(switchView ? "Missions" : "Astronauts")
                 .navigationBarTitleDisplayMode(.inline)
             
